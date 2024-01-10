@@ -1,3 +1,5 @@
+![python3](https://img.shields.io/badge/python-3)
+
 # shodan_grepper
 
 Tool to search Shodan API for vulnerabilities in IPs
