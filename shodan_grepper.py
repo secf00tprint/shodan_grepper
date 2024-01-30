@@ -1,3 +1,7 @@
+# Excludes hinzufügen für IPs+CVE
+# delta anzeigen vom letzten Mal
+# Wahlmöglichkeit ist es mitigiert oder nicht
+
 import json
 import argparse
 import os
@@ -66,13 +70,13 @@ else:
                         colorstart=''
                         colorend=''
                         if 'CRITICAL' in base_score:
-                            colorstart='\033[31m'
+                            colorstart='\033[36m'
                         if 'HIGH' in base_score:
-                            colorstart='\033[33m'
+                            colorstart='\033[31m'
                         if 'MEDIUM' in base_score:
-                            colorstart='\033[93m'
+                            colorstart='\033[33m'
                         if 'LOW' in base_score:
-                            colorstart='\033[32m'
+                            colorstart='\033[34m'
                         if bool(colorstart):
                             colorend='\033[0m'
                         toprint=toprint+f"{colorstart}{vuln_nr}:{base_score}{colorend}\n"
