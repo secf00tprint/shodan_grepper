@@ -1,7 +1,3 @@
-# Excludes hinzufügen für IPs+CVE
-# delta anzeigen vom letzten Mal
-# Wahlmöglichkeit ist es mitigiert oder nicht
-
 import json
 import argparse
 import os
